@@ -70,13 +70,13 @@ counters.forEach((counter) => {
     // Retrieve the color from local storage (if set previously)
     const storedColor = localStorage.getItem("backgroundColor");
     if (storedColor) {
-      root.style.setProperty('--background-color', storedColor);
+      root.style.setProperty('--color', storedColor);
       colorInput.value = storedColor;
     }
 
     changeColorButton.addEventListener("click", () => {
       const selectedColor = colorInput.value;
-      root.style.setProperty('--background-color', selectedColor);
+      root.style.setProperty('--color', selectedColor);
 
       // Store the selected color in local storage
       localStorage.setItem("backgroundColor", selectedColor);
