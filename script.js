@@ -70,7 +70,7 @@ counters.forEach((counter) => {
     // Retrieve the color from local storage (if set previously)
     const storedColor = localStorage.getItem("backgroundColor");
     if (storedColor) {
-      root.style.setProperty('--color', storedColor);
+      root.style.setProperty('-color', storedColor);
       colorInput.value = storedColor;
     }
 
